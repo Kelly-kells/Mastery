@@ -1,6 +1,6 @@
 import React from 'react'
 
- function Pricing() {
+export function Pricing() {
     
 
     return (
@@ -9,4 +9,3 @@ import React from 'react'
         </section>
     )
 }
-export default Pricing;

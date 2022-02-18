@@ -1,12 +1,11 @@
 import React from 'react'
 
- function Home(props) {
+export function Home() {
     
 
     return (
-        <section className='container'>
-           Home  
+        <section className='Home-container'>
+         <h1> Happy</h1>
         </section>
     )
 }
-export default Home;

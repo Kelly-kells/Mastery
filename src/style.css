@@ -5,44 +5,118 @@
     margin: 0;
 }
 
+    
 body{
-    background-color: #283618;
-}
-nav{
+    background-color: #000;
+}    
+.pages{
+    color:#fff;
+  }  
     
-    position: relative;
-}
-nav ul {
+.navbar{
+    
+    height: 6rem;
     display: flex;
-    font-size: 1.3rem;
-    font-family: 'PT Serif', serif;
-    list-style: none;
-    justify-content: flex-end;
-    margin-right: 20px;
-    
-}
-
-nav ul li{
-    color: white ;
-    padding-left: 50px;
-    
-}
-
-nav a{
-    color: #fff !important;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    font-size: 1.2rem;
+    top: 0;
+  } 
+  .nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    max-width: 1500px;
+  }
+  .nav-logo{
+    color: aqua;
+    cursor: pointer;
     text-decoration: none;
-    
-    
-}
-nav a:hover{
-    border-bottom: cyan 4px solid; 
-    transition: width  2s; 
-    border-width: 5px;
-}
+    font-size: 2rem;
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  .nav-menu{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    border: #40916c 2px solid;
+   
+  }
+  #nav-links{
+    color: cyan;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+  }
+  .nav-item{
+    line-height: 40px;
+    margin-right: 1rem;
+  }
+  .nav-item:after{
+     content: "";
+     display: block;
+     height: 3px;
+     width: 0;
+     background: transparent;
+     transition: width 0.7s ease,background-color 0.5s;
+  }
+  .nav-item:hover:after{
+    width: 100%;
+    background: #fff;
+  }
+  .nav-icon{
+    display: none;
+  }
+  .nav-item .active {
+    color:#fff !important;
+   
+  }
+  
 
 
 
-.container{
-    color: white;
-    margin-top: 50px;
+
+
+  @media  screen and (max-width:960px) {
+    .nav-menu{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     border-top: 1px solid #fff;
+     position: absolute;
+     top: 80px;
+     left: -110%;
+     opacity: 1;
+    }
+  
+    .nav-icon{
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100, 60%);
+      font-size:1.8rem;
+      cursor: pointer;
+      color: cyan;
+    }
+    #nav-links{
+      padding: 1rem;
+      width: 100%;
+      display: table;
+    }
+    .nav-item .active{
+      color: cyan;
+      border: none;
+    }
+    .nav-menu.active{
+      background-color: #40916c;
+      left:0px;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
 }

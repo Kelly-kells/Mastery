@@ -1,6 +1,6 @@
 import React from 'react'
 
- function About() {
+export function About() {
     
 
     return (
@@ -9,4 +9,3 @@ import React from 'react'
         </section>
     )
 }
-export default About;
