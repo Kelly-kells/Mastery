@@ -2,22 +2,16 @@ import React,{useState} from 'react'
 
 export function Home() {
 
-       const[change, setChange]=useState('Shop')
-
-
-    const handleClick=()=>{
        
-        setChange('Buy')
-
-    }
+const [color, setColor]=useState('#fff')
 
     return (
         <section>
 
            <div className="Home-container">
-           <img src="/images/kicks-one.jpg" alt="" />
-
-                <button onClick={(change)}> click</button>
+           <img src="/images/kicks-one.jpg" alt="" style={{backgroundColor: "red"}}/>
+                <button >{color} click</button>  
+             
 
                </div> 
          
