@@ -4,6 +4,7 @@ import { Home } from "./Components/pages/Home";
 import { About } from "./Components/pages/About";
 import Navbar from "./Components/Navbar";
 import { Pricing } from "./Components/pages/Pricing";
+import DarkModeToggle from './Components/Theme/DarkModeToggle';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
      <Route path="/pricing" element={<Pricing />} /> 
       </Routes>
       </div>
+      <DarkModeToggle />
     </Router>
     </div>
   );

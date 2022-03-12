@@ -8,8 +8,14 @@
 }
 
     
-body{
-    background-color: #000;
+body.light-mode {
+  background-color: #fff;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+body.dark-mode {
+  background-color: #1a1919;
+  color: #999;
 }    
 .pages{
     color:#fff;
@@ -78,7 +84,61 @@ body{
     color:#fff !important;
    
   }
+  .Home-container p{
+    display: flex;
+    margin-left: 300px;
+  }
+
   
+  .box{
+    background-color: #40916c;
+    width: 50%;
+    height: 400px;
+    margin-left: 200px;
+  }
+  .Home-container .fas{
+   padding-left: 10px;
+  }
+  .fas1{
+    background-color: purple;
+    width: 50%;
+    height: 400px;
+    margin-left: 200px;
+
+  }
+  
+  .fas2{
+    background-color: yellow;
+  
+    width: 50%;
+    height: 400px;
+    margin-left: 200px;
+  }
+  .fas3{
+    background-color:white;
+    width: 50%;
+    height: 400px;
+    margin-left: 200px;
+  }
+  .fas4{
+    background-color: yellowgreen;
+    width: 50%;
+    height: 400px;
+    margin-left: 200px;
+  }
+  #circle1{
+    color: purple;
+  }
+  #circle2{
+    color: yellow;
+  }
+
+  #circle3{
+    color: white;
+  }
+  #circle4{
+    color: yellowgreen;
+  }
 
 
 
